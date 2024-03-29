@@ -1,5 +1,11 @@
 # 54q4r4
-54q4r4 Technical test
+
+![Saqara Logo](https://cdn.jaimelesstartups.fr/wp-content/uploads/2021/09/Logo-Saqara-1500x535.jpg
+"Saqara Logo")
+
+## Description
+
+54q4r4 Technical test. Please look into [api](api) and [client](client) for more information
 
 ## Install project
 
@@ -23,3 +29,7 @@ cp .env.template .env
 ```
 docker compose up
 ```
+
+## Test
+
+You can import and use the [Postman](https://www.postman.com/) collection in [54q4r4.postman_collection.json](54q4r4.postman_collection.json) file

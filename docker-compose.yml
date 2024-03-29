@@ -9,6 +9,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: 54q4r4_r007
+    volumes:
+      - ./all-collections.archive:/all-collections.archive
 
   mongo-express:
     image: mongo-express

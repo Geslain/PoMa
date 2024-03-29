@@ -25,10 +25,16 @@ cp .env.template .env
 
 * (Optional) Install [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/compose/install/)
 * Launch docker compose
-
 ```
 docker compose up
 ```
+* (Optional but funnier) Load database archive for seeds data
+```shell
+source .env
+docker exec 54q4r4-mongo-1 sh -c "exec mongorestore --uri='mongodb://${DATABASE_USER}:${DATABASE_PASSWORD}@127.0.0.1:27017'  --archive=./all-collections.archive"```
+```
+
+All seeded users passwords are: `test`
 
 ## Test
 

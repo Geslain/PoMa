@@ -1,9 +1,9 @@
 [submodule "api"]
 	path = api
-	url = git@github.com:Geslain/54q4r4-api.git
+	url = git@github.com:Geslain/PoMa-api.git
 	branch = main
 [submodule "client"]
 	path = client
-	url = git@github.com:Geslain/54q4r4-client.git
+	url = git@github.com:Geslain/PoMa-client.git
 	branch = main
 

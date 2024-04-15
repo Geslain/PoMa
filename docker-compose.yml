@@ -8,7 +8,7 @@ services:
       - '27017:27017'
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: 54q4r4_r007
+      MONGO_INITDB_ROOT_PASSWORD: PoMa_r007
     volumes:
       - ./all-collections.archive:/all-collections.archive
 
@@ -21,14 +21,14 @@ services:
       - mongo
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: 54q4r4_r007
-      ME_CONFIG_MONGODB_URL: mongodb://root:54q4r4_r007@mongo:27017/
+      ME_CONFIG_MONGODB_ADMINPASSWORD: PoMa_r007
+      ME_CONFIG_MONGODB_URL: mongodb://root:PoMa_r007@mongo:27017/
 
   api:
     build:
       context: api
       dockerfile: Dockerfile
-    container_name: 54q4r4-api
+    container_name: PoMa-api
     environment:
       - DATABASE_NAME=${DATABASE_NAME}
       - DATABASE_USER=${DATABASE_USER}
@@ -46,7 +46,7 @@ services:
     build:
       context: client
       dockerfile: Dockerfile
-    container_name: 54q4r4-client
+    container_name: PoMa-client
     environment:
       - NEXT_PUBLIC_API_URL=http://127.0.0.1:${API_PORT}
       - NEXT_PUBLIC_SERVER_API_URL=http://api:3000

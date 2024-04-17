@@ -1,5 +1,3 @@
-version: '3.5'
-
 services:
   mongo:
     image: mongo
@@ -57,3 +55,7 @@ services:
       - api
     volumes:
       - ./client/src:/app/src
+      - type: bind
+        source: ./client/next.config.mjs
+        target: /app/next.config.mjs
+

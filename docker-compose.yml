@@ -48,14 +48,19 @@ services:
     environment:
       - NEXT_PUBLIC_API_URL=http://127.0.0.1:${API_PORT}
       - NEXT_PUBLIC_SERVER_API_URL=http://api:3000
-      - NEXTAUTH_SECRET=secret
+      - AUTH_SECRET=${AUTH_SECRET}
+      - NEXTAUTH_SECRET=${AUTH_SECRET}
     ports:
       - ${CLIENT_PORT}:3000
     depends_on:
       - api
     volumes:
       - ./client/src:/app/src
+      - ./client/public:/app/public
       - type: bind
         source: ./client/next.config.mjs
         target: /app/next.config.mjs
+      - type: bind
+        source: ./client/tailwind.config.ts
+        target: /app/tailwind.config.ts
 

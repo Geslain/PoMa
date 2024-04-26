@@ -119,7 +119,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"firstname\": \"{{$randomFirstName}}\",\n    \"lastname\": \"{{$randomLastName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"password\": \"{{$randomPassword}}\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -271,7 +271,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"firstname\": \"{{$randomFirstName}}\",\n    \"lastname\": \"{{$randomLastName}}\",\n    \"email\": \"{{$randomEmail}}\",\n    \"password\": \"{{$randomPassword}}\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -279,7 +279,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/projects/65f93c1435ec27b84ef53e3f/tasks/65f93f8fa02497d8f662199e",
+							"raw": "http://localhost:3001/projects/65f93c1435ec27b84ef53e3f",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -287,9 +287,7 @@
 							"port": "3001",
 							"path": [
 								"projects",
-								"65f93c1435ec27b84ef53e3f",
-								"tasks",
-								"65f93f8fa02497d8f662199e"
+								"65f93c1435ec27b84ef53e3f"
 							]
 						}
 					},
@@ -332,7 +330,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n   \"_id\": \"65f86c9d9b9c8cc59553585f\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -424,7 +422,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Important task\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -480,7 +478,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"Adele63@hotmail.com\",\n    \"password\": \"testPassword\"\n}",
+							"raw": "{\n    \"email\": \"geslain.dahan@gmail.com\",\n    \"password\": \"test\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -509,8 +507,6 @@
 							"listen": "test",
 							"script": {
 								"exec": [
-									"var res = pm.response.json();",
-									"pm.collectionVariables.set('token', res.accessToken);",
 									""
 								],
 								"type": "text/javascript",
